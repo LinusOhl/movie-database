@@ -1,0 +1,127 @@
+@import "_variables.scss";
+
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-image: linear-gradient(
+    111.4deg,
+    rgba(7, 7, 9, 1) 6.5%,
+    rgba(27, 24, 113, 1) 93.2%
+  );
+}
+
+.mdb-navbar {
+  background: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-image {
+  width: 50%;
+}
+
+.goback-btn {
+  float: right;
+}
+
+.loading-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.genres {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.4em;
+}
+
+.genre {
+  background-color: rgb(31, 88, 173);
+}
+
+.release-date {
+  margin-bottom: 0;
+}
+
+.card-info {
+  display: none;
+  height: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2049194677871149) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+.card-info-title {
+  width: 100%;
+}
+.card-info-overview {
+  height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.watch-button {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.card:hover .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+.information-container {
+  background-color: none;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  border: 1px solid rgba(47, 47, 97, 0.3);
+}
+
+.sm-card:hover {
+  box-shadow: 0px 0px 25px 0px rgba(31, 88, 173, 0.75);
+}
+.sm-link {
+  text-decoration: none;
+}
